@@ -1,0 +1,338 @@
+/*
+
+Colors:
+
+Light White: #e9eaead6;
+White: #e9eaea;
+Light: #27292d
+Dark: #18191a
+
+*/
+
+/* Sitewide */
+body {
+	margin: 0px;
+}
+
+h1 {
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+	serif; font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	margin: 0px 0px ;
+	color: #e9eaea;
+}
+h2 {
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+	serif; font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	margin: 0px 0px ;
+	color: #e9eaea;
+}
+
+h3 {
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+	serif; font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	margin: 0px 0px ;
+	color: #e9eaea;
+}
+
+p {
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+	serif; font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 2;
+	margin: 0px 0px ;
+	color: #e9eaea;
+}
+a {
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+	serif; font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 2;
+	margin: 0px 0px ;
+	color: #e9eaea;
+}
+
+
+
+/* DESKTOP */
+.d_cont {
+	height: 100vh;
+	width: 100%;
+	background-color: #27292d;
+	display: flex;
+}
+.d_content {
+	margin: auto;
+}
+@media(max-width: 420px){
+	.desktop {
+		display: none;
+	}
+}
+
+/* MOBILE */
+@media (min-width: 421px){
+	.mobile {
+		display: none;
+	}
+}
+/*
+Go here to upload images:
+http://www.freeimagehosting.net/upload.php
+*/
+
+
+/* Dev 032820 */
+
+/* start nav btn */
+.nav_btn {
+	background: #18191a;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 15.79%;
+    border: 1px solid #e9eaead6;
+    display: flex;
+}
+.close_nav {
+	background-color: #18191a;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 15.79%;
+    border: 1px solid #e9eaead6;
+    display: flex;
+    z-index: 10;
+    animation: open_nav_2 0.5s;
+}
+.nav_btn button {
+	height: 100%;
+	width: 100%;
+	color: #e9eaead6;
+}
+
+.close_nav button {
+	height: 100%;
+    width: 100%;
+    color: #e9eaead6;
+    font-size: 8px;
+    padding: 0px;
+    border: 0px;
+    background-color: #27292d;
+    transform: rotate(180deg);
+}
+
+
+.nav-btn .bar {
+	height: 2px;
+    background-color: #000;
+    width: 100%;
+    margin: 0 auto 1px auto;
+    display: inline-block;
+}
+.hide {
+	display:none;
+}
+
+/* end nav btn */
+
+/* start nav menu */
+
+.nav {
+	position: fixed;
+	width:100%;
+	bottom: -5px;
+    animation: open_nav 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.nav_wrap {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	background-color: #18191a;
+	padding: 0px 0px 5px 0px;
+}
+.item {
+	width: 25%;
+	height: 21vh;
+	background-color: #18191a;
+	display: flex;
+}
+.item button {
+	color: #e9eaea;
+    width: 100%;
+    margin: auto;
+    height: 69px;
+    background-color: #18191a;
+    border: none;
+    border-right: 1px solid #e9eaea85;
+}
+
+.nav_wrap .item:last-child button {
+    border-right: none;
+}
+
+
+/* Blocks */
+
+.block {
+	position: fixed;
+    bottom: 21vh;
+    background-color: #18191a;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    animation: open_nav 0.4s;
+    transition-timing-function: ease-in-out;
+    height: 21vh;
+    display: flex;
+}
+.block_cont {
+	margin: auto;
+}
+
+/* Animations */
+
+@keyframes open_nav {
+    0%   {transform: translateY(10px);}
+    50%  {transform: translateY(-5px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes open_nav_2 {
+	0%   {transform: translate(-5px, -5px);opacity: 0;}
+    60% {opacity: 0.2;}
+    100% {transform: translate(0px, 0px);opacity: 1;}
+}
+/* how do we so exit animations
+looks like we might have to add to classes at the same time, but that's kind
+*/
+
+
+
+/* end nav menu */
+
+/* start intro */
+.intro {
+	background-color: #27292d;
+	color: #e9eaea;
+	height: 25vh;
+	padding: 30px 10px 60px 10px;
+	display: flex;
+}
+
+.profile-img {
+	background-image: url(https://i.imgur.com/L5RJhcF.jpg);
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	background-position: 50% 50%;
+	border-radius: 15.79%;
+}
+.intro-cont {
+	margin: 0px 5px;
+    padding: 10px 0px;
+}
+.line {
+	display: flex;
+}
+img.icon {
+	width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.main-content {
+	width: 100%;
+}
+
+
+
+/* Homepage hero */
+
+
+.main {
+    height: 500px;
+    display: flex;
+}
+
+
+
+.header h1 {
+	font-size: 32px;
+	font-weight: 100;
+	margin: 0px 0px;
+	color: #ededed;
+}
+
+.header h2 {
+	font-size: 18px;
+	margin: 0px 0px;
+	font-weight: 200;
+	color: #ededed;
+}
+
+.header p {
+	margin: 30 0 0px 0;
+}
+
+
+
+/* Reese dev 032920 */
+.body-section-1 {
+	width: 100%;
+	background: #27292d;
+	height: 75vh;
+	display: flex;
+}
+
+.homepage-sec-1 {
+	max-width: 100%;
+    margin: 0 auto;
+}
+
+.body-contain {
+	padding: 0px 20px;
+	margin: 40px 0px auto 0px;
+}
+
+
+
+
+.homepage-sec-1 p {
+	color: #ededed;
+	font-size: 20px;
+}
+
+.author p {
+	color: #ededed;
+	text-align: right;
+	padding: 15px 40px 0px 0px;
+	font-size: 16px;
+}
