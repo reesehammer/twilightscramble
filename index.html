@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+
+<!--
+
+Hey, what's up,
+
+Strange seeing you here... hit me up any time: reesehammerstrom@gmail.com
+
+Alwways inclined to meet curious people
+
+-->
+
+
+
+<html>
+
+  <head>
+
+    <title>Reese Hammerstrom Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="shortcut icon" type="image/png" href="https://i.imgur.com/wARhimV.png"/>
+
+  </head>
+
+  <body>
+
+  	<div class="desktop">
+  		<div class="d_cont">
+  			<div class="d_content">
+  				<h1>Mobile only</h1>
+  				<p>Text me a link to site:</p>
+  			</div>
+  		</div>
+  	</div>
+
+
+
+
+
+
+
+
+
+
+
+  	<div class="mobile">
+
+
+  		<!-- Main btn to open nav -->
+  		<div class="nav_btn" id="nav_btn">
+  			<button onclick="openNav()">v</button>
+  		</div>
+
+  		<!-- Btn to close the nav when it's open -->
+  		<div class="nav_hide_btn hide" id="close_nav">
+  			<div class="close_nav">
+  				<button onclick="closeNav()">v</button>
+  			</div>
+  		</div>
+
+
+  		<!-- The nav -->
+		<div class="nav hide" id="nav_bar">
+  			<div class="nav_wrap">
+	  				<div class="item">
+	  					<button onclick="window.location.href = 'https://nomadgoods.com/'; " href="https://nomadgoods.com/">Yo</button>
+	  				</div>
+		  			<div class="item">
+		  				<button onclick="window.location.href = 'https://nomadgoods.com/'; " href="https://nomadgoods.com/">Yo</button>
+		  			</div>
+		  			<div class="item">
+		  				<button onclick="window.location.href = 'https://nomadgoods.com/'; " href="https://nomadgoods.com/">Yo</button>
+		  			</div>
+		  			<div class="item">
+		  				<button onclick="open_contact()">+</button>
+		  			</div>
+  			</div>
+  		</div>
+
+  		<!-- Nav Block (+) -->
+
+  		<div class="hide" id="block_plus">
+  			<div class="block">
+	  			<div class="block_cont">
+	  				<p>Yo</p>
+	  			</div>
+  			</div>
+  		</div>
+
+
+
+
+		<!-- herom img in hero -->
+
+		<div class="intro">
+			<div class="profile-img">
+
+			</div>
+
+			<div class="intro-cont">
+				<div class="line">
+					<img class="icon" src="https://cdn.trendhunterstatic.com/phpthumbnails/351/351364/351364_2_800.jpeg">
+					<h1>Reese Hammerstrom</h1>
+				</div>
+
+				<div class="line">
+					<img class="icon" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/237/hammer_1f528.png">
+					<h2>Ecommerce, <a target="_blank" href="https://nomadgoods.com/">Nomad</a></h2>
+				</div>
+			</div>
+		</div>
+
+
+  		<div class="main-content">
+
+  			<!-- Start intro section -->
+
+		    <div class="body-section-1">
+		    	<div class="center-content body-contain">
+		  			<div class="homepage-sec-1">
+		    			<div>
+		    				<p>"Your world is a living expression of how you are using and have used your mind."</p>
+		    			</div>
+		    			<div class="author">
+		    				<p>- Earl Nightingale</p>
+		    			</div>
+		    		</div>
+
+		    	</div>
+		    </div>
+
+		</div>
+
+
+
+
+
+	 	<div class="temp-space">
+	 		<!-- Footer goes here -->
+	 	</div>
+ 	</div>
+
+
+ 	<!-- Open Nav -->
+ 	<script>
+
+ 		function openNav() {
+		  	var hide_nav_btn = document.getElementById("nav_btn");
+		  	hide_nav_btn.classList.add("hide");
+
+		  	var open_nav = document.getElementById("nav_bar");
+		  	open_nav.classList.remove("hide");
+
+		  	var open_nav_2 = document.getElementById("nav_bar");
+		  	open_nav_2.classList.add("nav-is-open");
+
+		  	var close_nav_btn = document.getElementById("close_nav");
+		  	close_nav_btn.classList.remove("hide");
+		}
+
+	</script>
+
+
+	<!-- Menu Close -->
+	<script>
+
+		function closeNav() {
+			var close_close_btn_2 = document.getElementById("close_nav");
+			close_close_btn_2.classList.add("hide");
+
+			var close_nav_2 = document.getElementById("nav_bar");
+			close_nav_2.classList.add("hide");
+
+			var open_og_nav = document.getElementById("nav_btn");
+			open_og_nav.classList.remove("hide");
+
+			var block_1_close = document.getElementById("block_plus");
+			block_1_close.classList.add("hide");
+		}
+
+	</script>
+
+	<!-- Blaock 1 btn -->
+	<script>
+
+		function open_contact() {
+			var block_plus = document.getElementById("block_plus");
+			block_plus.classList.toggle("hide");
+		}
+
+	</script>
+
+
+  </body>
+
+</html>
