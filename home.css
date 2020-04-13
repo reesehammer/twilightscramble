@@ -231,23 +231,25 @@ looks like we might have to add to classes at the same time, but that's kind
 .intro {
 	background-color: #27292d;
 	color: #e9eaea;
-	height: 25vh;
 	padding: 30px 10px 60px 10px;
 	display: flex;
 	background-size:cover;
+	background-position: 50% 50%;
+	height:300px;
 }
 
-.profile-img {
+/*.profile-img {
 	background-image: url(https://i.imgur.com/L5RJhcF.jpg);
 	height: 200px;
 	width: 200px;
 	background-size: cover;
 	background-position: 50% 50%;
 	border-radius: 15.79%;
-}
+}*/
+
 .intro-cont {
-	margin: 0px 5px;
-    padding: 10px 0px;
+	margin: auto auto 0px  0px;
+    padding: 10px;
 }
 .line {
 	display: flex;
