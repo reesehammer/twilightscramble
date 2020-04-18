@@ -10,21 +10,33 @@ Dark: #18191a
 */
 
 /* Sitewide */
+
+@font-face {
+	font-family: Prime-Light;
+	src: url(Prime/Prime-Light.woff) format('woff');
+}
+@font-face {
+	font-family: Prime-Regular;
+	src: url(Prime/Prime-Regular.woff) format('woff');
+}
+
 body {
 	margin: 0px;
 }
 
 h1 {
-	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+	font-family: Prime-Regular, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
 	serif; font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 700;
 	margin: 0px 0px ;
 	color: #e9eaea;
+	line-height: 1.2;
+	margin-bottom: 5px;
 }
 h2 {
-	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
 	serif; font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -34,7 +46,7 @@ h2 {
 }
 
 h3 {
-	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
 	serif; font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -44,7 +56,7 @@ h3 {
 }
 
 p {
-	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
 	serif; font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -54,7 +66,7 @@ p {
 	color: #e9eaea;
 }
 a {
-	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
 	serif; font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -236,36 +248,28 @@ looks like we might have to add to classes at the same time, but that's kind
 	display: flex;
 }
 .profile-img {
-	background-image: url(https://i.imgur.com/L5RJhcF.jpg);
-	height: 50px;
-	width: 50px;
+	height: 95px;
+	width: 95px;
 	background-size: cover;
-	background-position: 50% 50%;
+	background-position: 54% 50%;
 	border-radius: 15.79%;
 	display: flex;
-	margin: auto 20px 20px 20px;
+	margin: auto 20px 0px 20px;
 }
 
 .intro-cont {
 	margin: auto auto 0px  0px;
-    padding: 10px;
-}
-.line {
+  padding: 0px;
+	height: 95px;
 	display: flex;
+	line-height: 0;
 }
-img.icon {
-	width: 20px;
-    height: 20px;
-    margin-right: 10px;
+.hero-txt {
+	margin: auto 0px 0px 0px;
 }
-
-
-
-
-
-
-
-
+.ig-link {
+	font-size: 10px;
+}
 
 
 
@@ -276,36 +280,26 @@ img.icon {
 	background-color: #27292d;
 }
 
-
-
 /* Homepage hero */
-
-
 .main {
     height: 500px;
     display: flex;
 }
-
-
-
 .header h1 {
 	font-size: 32px;
 	font-weight: 100;
 	margin: 0px 0px;
 	color: #ededed;
 }
-
 .header h2 {
 	font-size: 18px;
 	margin: 0px 0px;
 	font-weight: 200;
 	color: #ededed;
 }
-
 .header p {
 	margin: 30 0 0px 0;
 }
-
 
 
 /* Reese dev 032920 */
@@ -315,25 +309,18 @@ img.icon {
 	height: 75vh;
 	display: flex;
 }
-
 .homepage-sec-1 {
 	max-width: 100%;
     margin: 0 auto;
 }
-
 .body-contain {
 	padding: 0px 20px;
 	margin: 40px 0px auto 0px;
 }
-
-
-
-
 .homepage-sec-1 p {
 	color: #ededed;
 	font-size: 20px;
 }
-
 .author p {
 	color: #ededed;
 	text-align: right;
