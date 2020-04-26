@@ -54,10 +54,22 @@ h3 {
 	margin: 0px 0px ;
 	color: #e9eaea;
 }
+h3 span {
+	margin-left: 6px;
+	position: absolute;
+	overflow: hidden;
+	opacity: 0;
+	color: #f3f3f3;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-family: Prime-Regular, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	max-width: 180px;
+}
 
 p {
 	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
-	serif; font-size: 14px;
+	serif; font-size: 12px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -67,13 +79,20 @@ p {
 }
 a {
 	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
-	serif; font-size: 14px;
+	serif; font-size: 10px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 2;
 	margin: 0px 0px ;
 	color: #e9eaea;
+	text-decoration: none;
+	border-bottom: 1px solid #e9eaea6e;
+}
+a::after {
+	content: '>>';
+	margin-left: 5px;
+	font-size: 10px;
 }
 
 /* DESKTOP */
@@ -253,8 +272,7 @@ looks like we might have to add to classes at the same time, but that's kind
 	background-size: cover;
 	background-position: 54% 50%;
 	border-radius: 15.79%;
-	display: flex;
-	margin: auto 20px 0px 20px;
+	margin: auto 10px 0px 10px;
 }
 
 .intro-cont {
@@ -266,9 +284,6 @@ looks like we might have to add to classes at the same time, but that's kind
 }
 .hero-txt {
 	margin: auto 0px 0px 0px;
-}
-.ig-link {
-	font-size: 10px;
 }
 
 
@@ -302,28 +317,100 @@ looks like we might have to add to classes at the same time, but that's kind
 }
 
 
-/* Reese dev 032920 */
+/* Reese dev 032920
 .body-section-1 {
 	width: 100%;
 	background: #27292d;
 	height: 75vh;
 	display: flex;
+}*/
+
+.cycle section {
+	margin: 0px auto 0px 0px;
+	padding: 40px 10px 10px 10px;
+	max-width: 300px;
 }
-.homepage-sec-1 {
-	max-width: 100%;
-    margin: 0 auto;
+.cycle h3 > div {
+	display: inline;
 }
-.body-contain {
-	padding: 0px 20px;
-	margin: 40px 0px auto 0px;
+.cycle h3 > div::before {
+	content: 'Thinking about';
 }
-.homepage-sec-1 p {
+.cycle span {
+	animation: rotateWordsFirst 12s infinite;
+	-webkit-animation: rotateWordsFirst 12s infinite;
+}
+.cycle span:nth-child(2) {
+	-webkit-animation-delay: 2.4s;
+	        animation-delay: 2.4s;
+}
+.cycle span:nth-child(3) {
+	-webkit-animation-delay: 4.8s;
+	        animation-delay: 4.8s;
+}
+.cycle span:nth-child(4) {
+	-webkit-animation-delay: 7.2s;
+	        animation-delay: 7.2s;
+}
+.cycle span:nth-child(5) {
+	-webkit-animation-delay: 9.6s;
+	        animation-delay: 9.6s;
+}
+.quote {
+	margin: 10px 0px 10px 0px;
+	padding: 10px 10px 10px 10px;
+}
+.quote p {
 	color: #ededed;
-	font-size: 20px;
+	font-size: 12px;
 }
-.author p {
-	color: #ededed;
-	text-align: right;
-	padding: 15px 40px 0px 0px;
-	font-size: 16px;
+
+
+
+/* Reese Dev: 1:24AM
+042620 */
+
+/* pasted code from Nomad test page  */
+
+@-webkit-keyframes rotateWordsFirst {
+    0% {
+			opacity: 1;
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function:
+			ease-in;
+			width: 100%;
+		}
+    100% {
+			opacity: 1;
+			width: 100%;
+		}
+}
+
+@keyframes rotateWordsFirst {
+	0% {
+		opacity: 0.7;
+		width: 100%;
+		/* bottom: 0px; */
+	}
+	19% {
+		/* top: 60px; */
+		opacity:1;
+	}
+	20% {
+		/* opacity:0.2; */
+	}
+	29% {
+		/* opacity: 0.1; */
+	}
+	30% {
+		/* top: -15px; */
+		opacity: 0;
+	}
+	31% {
+	}
+
+	100% {
+		width: 0%;
+		opacity: 0;
+	}
 }

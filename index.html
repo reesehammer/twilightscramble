@@ -1,5 +1,12 @@
 <!DOCTYPE html>
+<!--
 
+Ideas:
+- built the Earl Nightingale quote into a quote section within <nav>
+- fade around nav btn to avoid text
+</nav>
+
+-->
 <!--
 
 Hey, what's up,
@@ -16,7 +23,7 @@ Alwways inclined to meet curious people
 
     <title>@reesehammer</title>
     <link rel="stylesheet" type="text/css" href="home.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0 ,user-scalable=no">
 	<link rel="shortcut icon" type="image/png" href="https://i.imgur.com/wARhimV.png"/>
   </head>
 
@@ -34,9 +41,9 @@ Alwways inclined to meet curious people
 
   	<div class="mobile">
   		<!-- Main btn to open nav -->
-  		<div class="nav_btn" id="nav_btn">
+        <div class="nav_btn" id="nav_btn">
           <button onclick="openNav()">v</button>
-  		</div>
+        </div>
   		<!-- Btn to close the nav when it's open -->
   		<div class="nav_hide_btn hide" id="close_nav">
   			<div class="close_nav">
@@ -82,7 +89,7 @@ Alwways inclined to meet curious people
   				<div class="hero-txt">
             <h1>Reese Hammerstrom</h1>
             <h2>Ecommerce, <a target="_blank" href="https://nomadgoods.com/">Nomad</a></h2>
-            <a class="ig-link" target="_blank" href="https://www.instagram.com/reesehammer">@reesehammer ></a>
+            <a target="_blank" href="https://www.instagram.com/reesehammer">@reesehammer</a>
 
 
           </div>
@@ -94,20 +101,29 @@ Alwways inclined to meet curious people
   		<div class="main-content">
 
   			<!-- Start intro section -->
+            <div class="cycle">
+              <section>
+              	<h3>
+              		<div>
+              			<span>Exercise</span>
+              			<span>Personal Automation</span>
+              			<span>Nomad</span>
+              			<span>Web Course</span>
+              			<span>Fiancé</span>
+              		</div>
+              	</h3>
+              </section>
+            </div>
 
-		    <div class="body-section-1">
-		    	<div class="center-content body-contain">
-		  			<div class="homepage-sec-1">
+            <div class="quote">
 		    			<div>
 		    				<p>"Your world is a living expression of how you are using and have used your mind."</p>
+                <a hred="#">- Earl Nightingale</a>
 		    			</div>
-		    			<div class="author">
-		    				<p>- Earl Nightingale</p>
-		    			</div>
+
 		    		</div>
 
-		    	</div>
-		    </div>
+		    	<!-- </div> -->
 
 		</div>
 
