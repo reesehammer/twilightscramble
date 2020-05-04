@@ -263,7 +263,7 @@ looks like we might have to add to classes at the same time, but that's kind
 	position: absolute;
 	height: 40vh;
 	width: 100%;
-	background-image: linear-gradient(#ffffff00 35%, #27292d 90%);
+	background-image: linear-gradient(-170deg, #FFFFFF00 66%, #27292d 82%);
 	display: flex;
 }
 .profile-img {
