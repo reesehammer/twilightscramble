@@ -258,7 +258,15 @@ looks like we might have to add to classes at the same time, but that's kind
 	background-size:cover;
 	background-position: 50% 50%;
 	height:40vh;
+	animation: hero_slide 30s linear;
 }
+
+@keyframes hero_slide {
+    0%   {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+
 .hero-fade {
 	position: absolute;
 	height: 40vh;
