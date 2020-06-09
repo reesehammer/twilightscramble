@@ -422,3 +422,56 @@ looks like we might have to add to classes at the same time, but that's kind
 		opacity: 0;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+/* Noter */
+.banner {
+	width: 100%;
+	height: 20vh;
+	background-color: #27292d;
+	display: flex;
+}
+.banner h1 {
+	line-height: 1;
+	margin: 0px;
+}
+.banner div {
+	border-top: 50px solid #fff;
+	margin: 20px auto auto 20px;
+	padding: 15px 60px 60px 15px;
+	border-left: 1px solid #fff;
+}
+
+.grid {
+	display:flex;
+	width: 100%;
+	height: 80vh;
+	background-color: #27292d;
+}
+
+.grid ul {
+	margin: auto 0px;
+  width: 100%;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.grid li {
+	display: flex;
+	background-color: #393937;
+	padding: 35px 5px;
+	width: calc(100% - 10px);
+	margin: 10px 0px;
+}
+
+.grid div {
+	margin: auto;
+}
