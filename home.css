@@ -141,15 +141,13 @@ http://www.freeimagehosting.net/upload.php
 
 /* vvv NAV BTSN vvv */
 .nav_btn {
-	background: #18191a;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    border-radius: 15.79%;
-    border: 1px solid #e9eaead6;
-    display: flex;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	display: flex;
+	animation: nav_fade 1.3s;
 }
 .close_nav {
 	background-color: #18191a;
@@ -167,6 +165,9 @@ http://www.freeimagehosting.net/upload.php
 .nav_btn button {
 	height: 100%;
 	width: 100%;
+	background: #18191a;
+	border: 0px;
+	padding: 0px;
 	color: #e9eaead6;
 }
 .close_nav button {
@@ -428,7 +429,7 @@ looks like we might have to add to classes at the same time, but that's kind
 
 /* pasted code from Nomad test page  */
 
-@-webkit-keyframes rotateWordsFirst, rotate3Items {
+@-webkit-keyframes rotateWordsFirst {
     0% {
 			opacity: 1;
 			-webkit-animation-timing-function: ease-in;
@@ -494,6 +495,21 @@ looks like we might have to add to classes at the same time, but that's kind
 	100% {
 		width: 0%;
 		opacity: 0;
+	}
+}
+
+@keyframes nav_fade {
+	0% {
+		opacity: 0;
+		bottom: -25px;
+	}
+	80% {
+		opacity: 0;
+		bottom: -25px;
+	}
+	100% {
+		opacity: 1;
+		bottom: 15px;
 	}
 }
 
