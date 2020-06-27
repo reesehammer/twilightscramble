@@ -144,23 +144,23 @@ http://www.freeimagehosting.net/upload.php
 	width: 50px;
 	height: 50px;
 	position: fixed;
-	bottom: 15px;
+	bottom: 85px;
 	right: 15px;
 	display: flex;
 	animation: nav_fade 1.3s;
 }
 .close_nav {
 	background-color: #18191a;
-    width: 20px;
-    height: 20px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    border-radius: 15.79%;
-    border: 1px solid #e9eaead6;
-    display: flex;
-    z-index: 10;
-    animation: open_nav_2 0.5s;
+	width: 20px;
+	height: 20px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: flex;
+	z-index: 10;
+	animation: open_nav_2 0.5s;
+	padding-top: 3px;
+
 }
 .nav_btn button {
 	height: 100%;
@@ -222,6 +222,7 @@ http://www.freeimagehosting.net/upload.php
     background-color: #18191a;
     border: none;
     border-right: 1px solid #e9eaea85;
+		font-size: 12px;
 }
 .nav_wrap .item:last-child button {
     border-right: none;
@@ -501,15 +502,15 @@ looks like we might have to add to classes at the same time, but that's kind
 @keyframes nav_fade {
 	0% {
 		opacity: 0;
-		bottom: -25px;
+		bottom: 45px;
 	}
 	80% {
 		opacity: 0;
-		bottom: -25px;
+		bottom: 45px;
 	}
 	100% {
 		opacity: 1;
-		bottom: 15px;
+		bottom: 85px;
 	}
 }
 
