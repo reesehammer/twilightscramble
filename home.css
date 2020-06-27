@@ -51,7 +51,7 @@ h3 {
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 700;
-	margin: 0px 0px ;
+	margin: 0px 0px 10px 0px ;
 	color: #e9eaea;
 }
 h3 span {
@@ -66,7 +66,16 @@ h3 span {
 	font-family: Prime-Regular, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 	max-width: 65%;
 }
-
+h4 {
+	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	    font-size: 14px;
+	    font-style: normal;
+	    font-variant: normal;
+	    font-weight: 100;
+	    margin: 20px 0px;
+	    color: #e9eaea;
+	    letter-spacing: 1.4px;
+}
 p {
 	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
 	serif; font-size: 12px;
@@ -91,6 +100,11 @@ a {
 }
 a::after {
 	content: '>>';
+	margin-left: 5px;
+	font-size: 10px;
+}
+a.anchor::after {
+	content: 'vv';
 	margin-left: 5px;
 	font-size: 10px;
 }
@@ -335,7 +349,7 @@ looks like we might have to add to classes at the same time, but that's kind
 
 .cycle section {
 	margin: 0px auto 0px 0px;
-	padding: 40px 10px 10px 10px;
+	padding: 40px 10px 20px 10px;
 	max-width: 300px;
 }
 .cycle h3 > div {
@@ -344,18 +358,56 @@ looks like we might have to add to classes at the same time, but that's kind
 .cycle h3 > div::before {
 	content: 'Thinking about';
 }
+.cycle.airtable h3 > div::before {
+	content: 'How To';
+}
 .cycle span {
 	animation: rotateWordsFirst 12s infinite;
 	-webkit-animation: rotateWordsFirst 12s infinite;
 }
+.cycle.airtable span {
+	animation: rotate3Items 12s infinite;
+	-webkit-animation: rotate3Items 6s infinite;
+}
+
 .cycle span:nth-child(2) {
 	-webkit-animation-delay: 2.4s;
 	        animation-delay: 2.4s;
+}
+.cycle.airtable span:nth-child(2) {
+	-webkit-animation-delay: 2s;
+	        animation-delay: 2s;
 }
 .cycle span:nth-child(3) {
 	-webkit-animation-delay: 4.8s;
 	        animation-delay: 4.8s;
 }
+.cycle.airtable span:nth-child(3) {
+	-webkit-animation-delay: 4s;
+	        animation-delay: 4s;
+}
+.cycle.airtable span:nth-child(1)::after {
+	content: '(1 of 3)';
+	font-size: 6px;
+	color: #a7a7a7;
+	margin: 7px 0px 0px 3px;
+	position: absolute;
+}
+.cycle.airtable span:nth-child(2)::after {
+	content: '(2 of 3)';
+	font-size: 6px;
+	color: #a7a7a7;
+	margin: 7px 0px 0px 3px;
+	position: absolute;
+}
+.cycle.airtable span:nth-child(3)::after {
+	content: '(3 of 3)';
+	font-size: 6px;
+	color: #a7a7a7;
+	margin: 7px 0px 0px 3px;
+	position: absolute;
+}
+
 .cycle span:nth-child(4) {
 	-webkit-animation-delay: 7.2s;
 	        animation-delay: 7.2s;
@@ -368,10 +420,6 @@ looks like we might have to add to classes at the same time, but that's kind
 	margin: 10px 0px 10px 0px;
 	padding: 10px 10px 10px 10px;
 }
-.quote p {
-	color: #ededed;
-	font-size: 12px;
-}
 
 
 
@@ -380,7 +428,7 @@ looks like we might have to add to classes at the same time, but that's kind
 
 /* pasted code from Nomad test page  */
 
-@-webkit-keyframes rotateWordsFirst {
+@-webkit-keyframes rotateWordsFirst, rotate3Items {
     0% {
 			opacity: 1;
 			-webkit-animation-timing-function: ease-in;
@@ -417,6 +465,32 @@ looks like we might have to add to classes at the same time, but that's kind
 	31% {
 	}
 
+	100% {
+		width: 0%;
+		opacity: 0;
+	}
+}
+
+@keyframes rotate3Items {
+	0% {
+		opacity: 0.7;
+		width: 100%;
+		padding-left: 20px;
+	}
+	5% {
+		padding-left: 24px;
+	}
+	20% {
+		opacity:1;
+		padding-left: 24px;
+	}
+	20% {
+		padding-left: 24px
+	}
+	40% {
+		opacity: 0;
+		padding-left: 22px;
+	}
 	100% {
 		width: 0%;
 		opacity: 0;

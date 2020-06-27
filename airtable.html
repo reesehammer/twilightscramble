@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--
+
+Ideas:
+- built the Earl Nightingale quote into a quote section within <nav>
+- fade around nav btn to avoid text
+
+-->
+<!--
+
+Hey, what's up,
+
+Strange seeing you here... hit me up any time: reesehammerstrom@gmail.com
+
+Alwways inclined to meet curious people
+
+-->
+
+<html>
+
+  <head>
+
+    <title>AirTable x @reesehammer</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0 ,user-scalable=no">
+	   <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/wARhimV.png"/>
+     <!-- Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118230484-2"></script>
+     <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-118230484-2');
+    </script>
+
+  </head>
+
+  <body>
+
+  	<div class="desktop">
+  		<div class="d_cont">
+  			<div class="d_content">
+  				<h1>Mobile only</h1>
+  				<p>Text me a link to site:</p>
+  			</div>
+  		</div>
+  	</div>
+
+
+  	<div class="mobile">
+  		<!-- Main btn to open nav -->
+        <div class="nav_btn" id="nav_btn">
+          <button onclick="openNav()">v</button>
+        </div>
+  		<!-- Btn to close the nav when it's open -->
+  		<div class="nav_hide_btn hide" id="close_nav">
+  			<div class="close_nav">
+  				<button onclick="closeNav()">v</button>
+  			</div>
+  		</div>
+
+  		<!-- The nav -->
+		<div class="nav hide" id="nav_bar">
+  			<div class="nav_wrap">
+	  				<div class="item">
+	  					<button onclick="window.location.href = 'https://nomadgoods.com/'; " href="https://nomadgoods.com/">Yo</button>
+	  				</div>
+		  			<div class="item">
+		  				<button onclick="window.location.href = 'https://nomadgoods.com/'; " href="https://nomadgoods.com/">Yo</button>
+		  			</div>
+		  			<div class="item">
+		  				<button onclick="window.location.href = 'https://nomadgoods.com/'; " href="https://nomadgoods.com/">Yo</button>
+		  			</div>
+		  			<div class="item">
+		  				<button onclick="open_contact()">+</button>
+		  			</div>
+  			</div>
+  		</div>
+
+  		<!-- Nav Block (+) -->
+
+  		<div class="hide" id="block_plus">
+  			<div class="block">
+	  			<div class="block_cont">
+	  				<p>Yo</p>
+	  			</div>
+  			</div>
+  		</div>
+
+		<!-- hero img in hero -->
+		<div class="intro" style="background-image: url(hero_1.jpg);">
+      <div class="hero-fade">
+        <div class="profile-img" style="background-image: url(headshot2020.jpg)">
+  			</div>
+
+  			<div class="intro-cont">
+  				<div class="hero-txt">
+            <h1>AirTable</h1>
+            <h2>CSS Overrides, & <a target="_blank" href="https://nomadgoods.com/">more</a></h2>
+            <a class="anchor" href="https://www.reesehammer.com/airtable#go">Go</a>
+
+
+          </div>
+  			</div>
+      </div>
+		</div>
+
+
+  		<div class="main-content">
+
+  			<!-- Start intro section -->
+            <div class="cycle airtable">
+              <section> <!-- move this div as a class of section?? -->
+              	<h3>
+              		<div>
+              			<span>Override CSS</span>
+              			<span>AirTable</span>
+                    <span>Thing 3</span>
+              		</div>
+              	</h3>
+              </section>
+            </div>
+
+            <div class="quote">
+		    			<div>
+                <h4>How does this h4 look</h4>
+		    				<p>
+                  Yo, going to explain how to unlock the formula airtable override.
+                  It's pretty simple. you just need to download a <a target="_blank" href="/">Chrome Extension</a>.
+                  Next I'll walk through configuring the Chrome Extension.
+                </p>
+                <p>You can get the code for each feature via <a target="_blank" href="git.hiub/reesehammer/fix">GitHub</a> or this Shared <a target="_blank" href="airtable.com">AirTable View</a></p>
+		    			</div>
+
+		    		</div>
+
+		    	<!-- </div> -->
+
+		</div>
+
+ 	</div>
+
+
+ 	<!-- Open Nav -->
+ 	<script>
+
+ 		function openNav() {
+		  	var hide_nav_btn = document.getElementById("nav_btn");
+		  	hide_nav_btn.classList.add("hide");
+
+		  	var open_nav = document.getElementById("nav_bar");
+		  	open_nav.classList.remove("hide");
+
+		  	var open_nav_2 = document.getElementById("nav_bar");
+		  	open_nav_2.classList.add("nav-is-open");
+
+		  	var close_nav_btn = document.getElementById("close_nav");
+		  	close_nav_btn.classList.remove("hide");
+		}
+
+	</script>
+
+
+	<!-- Menu Close -->
+	<script>
+
+		function closeNav() {
+			var close_close_btn_2 = document.getElementById("close_nav");
+			close_close_btn_2.classList.add("hide");
+
+			var close_nav_2 = document.getElementById("nav_bar");
+			close_nav_2.classList.add("hide");
+
+			var open_og_nav = document.getElementById("nav_btn");
+			open_og_nav.classList.remove("hide");
+
+			var block_1_close = document.getElementById("block_plus");
+			block_1_close.classList.add("hide");
+		}
+
+	</script>
+
+	<!-- Blaock 1 btn -->
+	<script>
+
+		function open_contact() {
+			var block_plus = document.getElementById("block_plus");
+			block_plus.classList.toggle("hide");
+		}
+
+	</script>
+
+
+  </body>
+
+</html>
