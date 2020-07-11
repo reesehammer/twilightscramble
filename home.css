@@ -64,7 +64,7 @@ h3 span {
 	letter-spacing: 2px;
 	font-size: 14px;
 	font-family: Prime-Regular, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
-	max-width: 65%;
+	max-width: 300px;
 }
 h4 {
 	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
@@ -113,12 +113,23 @@ body > div {
     background-color: #27292d;
 }
 
+/* highest level container */
+.master_wrap {
+	display: flex;
+}
 /* DESKTOP */
+.desktop {
+	width: 50%;
+	display: flex;
+}
+
 .d_cont {
-	height: 100vh;
+	height: 69vh;
 	width: 100%;
 	background-color: #27292d;
 	display: flex;
+	border-right: 3px solid #18191a;
+	margin: auto;
 }
 .d_content {
 	margin: auto;
@@ -132,7 +143,8 @@ body > div {
 /* MOBILE */
 @media (min-width: 421px){
 	.mobile {
-		display: none;
+		max-width: 420px;
+		margin: 0px auto;
 	}
 }
 /*
@@ -200,6 +212,7 @@ http://www.freeimagehosting.net/upload.php
 .nav {
 	position: fixed;
 	width:100%;
+	max-width: 420px;
 	bottom: -5px;
     animation: open_nav 0.4s;
     transition-timing-function: ease-in-out;
@@ -240,6 +253,7 @@ http://www.freeimagehosting.net/upload.php
     bottom: 21vh;
     background-color: #18191a;
     width: 100%;
+		max-width: 420px;
     margin-bottom: 1px;
     animation: open_nav 0.4s;
     transition-timing-function: ease-in-out;
@@ -293,6 +307,7 @@ looks like we might have to add to classes at the same time, but that's kind
 	width: 100%;
 	background-image: linear-gradient(-170deg, #FFFFFF00 66%, #27292d 82%);
 	display: flex;
+	max-width: 420px;
 }
 .profile-img {
 	height: 95px;
