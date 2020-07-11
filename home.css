@@ -139,12 +139,36 @@ body > div {
 		display: none;
 	}
 }
+/* Desktop Nav */
+@media (min-width: 1285px) {
+	.close_nav {
+		bottom: 85px !important;
+		right: 65px !important;
+	}
+}
 
 /* MOBILE */
 @media (min-width: 421px){
+
 	.mobile {
 		max-width: 420px;
 		margin: 0px auto;
+	}
+
+	.nav_btn {
+		right: 85px !important;
+	}
+
+	.close_nav {
+		padding: 3px !important;
+		width: 40px !important;
+    height: 40px !important;
+		background-color: #27292d !important;
+	}
+
+	.close_nav button {
+		background-color: #18191a !important;
+
 	}
 }
 /*
@@ -577,7 +601,7 @@ looks like we might have to add to classes at the same time, but that's kind
 .option-1 li {
 	display: flex;
 	background-color: #393937;
-	padding: 15px 5px;
+	padding: 30px 5px;
 	width: calc(100% - 60px);
 	margin: 40px auto;
 	border: 2px solid #e9eaead6;
