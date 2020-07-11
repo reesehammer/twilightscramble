@@ -108,6 +108,10 @@ a.anchor::after {
 	margin-left: 5px;
 	font-size: 10px;
 }
+body > div {
+    min-height: 100vh;
+    background-color: #27292d;
+}
 
 /* DESKTOP */
 .d_cont {
@@ -535,34 +539,69 @@ looks like we might have to add to classes at the same time, but that's kind
 	margin: 0px;
 }
 .banner div {
-	border-top: 50px solid #fff;
+	border-top: 50px solid #e9eaead6;
 	margin: 20px auto auto 20px;
 	padding: 15px 60px 60px 15px;
-	border-left: 1px solid #fff;
+	border-left: 1px solid #e9eaead6;
 }
 
-.grid {
+.option-1 {
 	display:flex;
 	width: 100%;
-	height: 80vh;
+	height: 100%;
 	background-color: #27292d;
 }
 
-.grid ul {
-	margin: auto 0px;
+.option-1 ul {
+	margin: 50px 0px;
   width: 100%;
   list-style-type: none;
   padding: 0px;
 }
 
-.grid li {
+.option-1 li {
 	display: flex;
 	background-color: #393937;
-	padding: 35px 5px;
-	width: calc(100% - 10px);
-	margin: 10px 0px;
+	padding: 15px 5px;
+	width: calc(100% - 60px);
+	margin: 40px auto;
+	border: 2px solid #e9eaead6;
+	border-radius: 20px;
+	border-top: 1px solid #e9eaead6;
+	border-left: 1px solid #e9eaead6;
 }
 
-.grid div {
+.option-1 a {
+	display: flex;
+}
+
+.option-1 li > div {
+	display: flex;
+}
+
+.option-1 .content {
+	display: block;
+}
+.option-1 button {
+	background-color: #393937;
+	color: #e9eaead6;
+	border: 0px;
+	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	padding: 0px;
+	width: calc(100% - 13px);
+	text-align: left;
+	cursor: pointer;
+	min-width: 150px;
+}
+
+.form {
+	padding: 40px 0px;
+}
+
+.option-1 div {
 	margin: auto;
+}
+
+.option-1 .hide {
+	display: none;
 }
