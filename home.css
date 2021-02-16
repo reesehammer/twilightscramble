@@ -59,7 +59,7 @@ h3 span {
 	position: absolute;
 	overflow: hidden;
 	opacity: 0;
-	color: #f3f3f3;
+	color: #e9eaea;
 	font-weight: 600;
 	letter-spacing: 2px;
 	font-size: 14px;
@@ -110,7 +110,7 @@ a.anchor::after {
 }
 body > div {
     min-height: 100vh;
-    background-color: #27292d;
+    background-color: #5C6266;
 }
 
 /* highest level container */
@@ -119,20 +119,24 @@ body > div {
 }
 /* DESKTOP */
 .desktop {
-	width: 50%;
-	display: flex;
 }
 
 .d_cont {
-	height: 69vh;
-	width: 100%;
-	background-color: #27292d;
+	height: 25%;
+	width: 200px;
+	background-color: #27292D;
 	display: flex;
-	border-right: 3px solid #18191a;
-	margin: auto;
+	border-right: 3px solid #969E9F;
+	border-radius: 6px;
+	border-bottom: 3px solid #969E9F;
+	position: fixed;
+	padding: 60px 20px;
+	/* margin: auto; */
+	top: 20%;
+	left: 40px;
 }
 .d_content {
-	margin: auto;
+	margin: auto auto auto 10px;
 }
 @media(max-width: 420px){
 	.desktop {
@@ -151,8 +155,10 @@ body > div {
 @media (min-width: 421px){
 
 	.mobile {
-		max-width: 420px;
-		margin: 0px auto;
+		/* max-width: 420px; */
+		/* margin: 0px auto; */
+		width: 100%;
+		margin: 80px 80px 80px 250px;
 	}
 
 	.nav_btn {
@@ -314,9 +320,16 @@ looks like we might have to add to classes at the same time, but that's kind
 	background-color: #27292d;
 	color: #e9eaea;
 	background-size:cover;
-	background-position: 50% 50%;
-	height:40vh;
-	animation: hero_slide 30s linear;
+	background-position: 50% 30%;
+	height: 39vh;
+	/* animation: hero_slide 30s linear; */
+	/* margin: 80px 80px 80px 80px; */
+	border-radius: 6px;
+	border-right: 3px solid #969E9F;
+	border-bottom: 3px solid #969E9F;
+	/* max-width: 800px; */
+	/* border-top: 3px solid #969E9F; */
+	/* border-left: 3px solid #969E9F; */
 }
 
 @keyframes hero_slide {
@@ -326,12 +339,13 @@ looks like we might have to add to classes at the same time, but that's kind
 
 
 .hero-fade {
-	position: absolute;
-	height: 40vh;
+	/* position: absolute; */
+	/* height: 40vh; */
 	width: 100%;
 	background-image: linear-gradient(-170deg, #FFFFFF00 66%, #27292d 82%);
 	display: flex;
 	max-width: 420px;
+	/* margin: 80px 0px 0px 0px; */
 }
 .profile-img {
 	height: 95px;
@@ -358,7 +372,7 @@ looks like we might have to add to classes at the same time, but that's kind
 
 .main-content {
 	width: 100%;
-	height: 60vh;
+	height: 100vh;
 	background-color: #27292d;
 }
 
@@ -394,14 +408,14 @@ looks like we might have to add to classes at the same time, but that's kind
 
 .cycle section {
 	margin: 0px auto 0px 0px;
-	padding: 40px 10px 20px 10px;
+	padding: 50px 0px 10px 0px;
 	max-width: 300px;
 }
 .cycle h3 > div {
 	display: inline;
 }
 .cycle h3 > div::before {
-	content: 'Thinking about';
+	content: '>';
 }
 .cycle.airtable h3 > div::before {
 	content: 'How To';
