@@ -109,7 +109,7 @@ a.anchor::after {
 	font-size: 10px;
 }
 body > div {
-    min-height: 100vh;
+    min-height: 100%;
     background-color: #5C6266;
 }
 
@@ -325,9 +325,9 @@ http://www.freeimagehosting.net/upload.php
 }
 
 .img-2 {
-    height: 200px;
+    height: 250px;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 48%;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     margin: auto;
@@ -423,7 +423,6 @@ looks like we might have to add to classes at the same time, but that's kind
 
 .main-content {
 	width: 100%;
-	height: 100vh;
 	background-color: #5C6266;
 }
 
@@ -529,7 +528,7 @@ looks like we might have to add to classes at the same time, but that's kind
 .quote {
 	padding: 0px;
 	width: 80%;
-	margin: auto;
+	margin: 30px auto;
 }
 
 
