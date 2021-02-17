@@ -122,7 +122,7 @@ body > div {
 }
 
 .d_cont {
-	height: 25%;
+	height: 24%;
 	width: 200px;
 	background-color: #27292D;
 	display: flex;
@@ -158,7 +158,7 @@ body > div {
 		/* max-width: 420px; */
 		/* margin: 0px auto; */
 		width: 100%;
-		margin: 80px 80px 80px 250px;
+		margin: 80px 80px 0px 250px;
 	}
 
 	.nav_btn {
@@ -290,8 +290,55 @@ http://www.freeimagehosting.net/upload.php
     height: 21vh;
     display: flex;
 }
+
 .block_cont {
 	margin: auto;
+}
+.caption {
+    text-align: right;
+    margin-right: 6px;
+}
+
+.hero-txt h2 {}
+
+.footer {
+    margin: 40px auto 10px auto;
+    background-color: #27292d;
+    padding: 10px 40px;
+    border-radius: 6px;
+    border-right: 2px solid #969E9F;
+    border-bottom: 2px solid #969E9F;
+    text-align: center;
+    width: 80%;
+}
+
+.footer a {
+    margin: 0px 10px;
+}
+
+.footer div:first-child {
+    margin-top: 0px;
+}
+
+.footer div {
+    margin-top: 20px;
+}
+
+.img-2 {
+    height: 200px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    margin: auto;
+    margin-bottom: 3px;
+}
+
+.quote div:nth-child(2) {
+    background-color: #27292D;
+    padding: 20px 20px 50px 20px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 /* Animations */
@@ -325,8 +372,8 @@ looks like we might have to add to classes at the same time, but that's kind
 	/* animation: hero_slide 30s linear; */
 	/* margin: 80px 80px 80px 80px; */
 	border-radius: 6px;
-	border-right: 3px solid #969E9F;
-	border-bottom: 3px solid #969E9F;
+	border-right: 2px solid #969E9F;
+	border-bottom: 2px solid #969E9F;
 	/* max-width: 800px; */
 	/* border-top: 3px solid #969E9F; */
 	/* border-left: 3px solid #969E9F; */
@@ -341,30 +388,34 @@ looks like we might have to add to classes at the same time, but that's kind
 .hero-fade {
 	/* position: absolute; */
 	/* height: 40vh; */
-	width: 100%;
-	background-image: linear-gradient(-170deg, #FFFFFF00 66%, #27292d 82%);
+	width: 80%;
+	/* background-image: linear-gradient(-170deg, #FFFFFF00 66%, #27292d 82%); */
 	display: flex;
-	max-width: 420px;
-	/* margin: 80px 0px 0px 0px; */
+	/* max-width: 100%; */
+	margin: 36px 0px 60px 20%;
 }
 .profile-img {
-	height: 95px;
-	width: 95px;
+	height: 210px;
+	width: 210px;
 	background-size: cover;
 	background-position: 54% 50%;
-	border-radius: 15.79%;
+	border-radius: 6px;
 	margin: auto 10px 0px 10px;
+	border-right: 2px solid #969E9F;
+	border-bottom: 2px solid #969E9F;
 }
 
 .intro-cont {
-	margin: auto auto 0px  0px;
-  padding: 0px;
+	margin: auto auto auto  20px;
+	padding: 0px;
 	height: 95px;
 	display: flex;
-	line-height: 0;
+	/* line-height: 1.2; */
+	/* width: 100%; */
 }
 .hero-txt {
-	margin: auto 0px 0px 0px;
+	margin: auto 0px auto 0px;
+	/* width: 100%; */
 }
 
 
@@ -373,7 +424,7 @@ looks like we might have to add to classes at the same time, but that's kind
 .main-content {
 	width: 100%;
 	height: 100vh;
-	background-color: #27292d;
+	background-color: #5C6266;
 }
 
 /* Homepage hero */
@@ -476,8 +527,9 @@ looks like we might have to add to classes at the same time, but that's kind
 	        animation-delay: 9.6s;
 }
 .quote {
-	margin: 10px 0px 10px 0px;
-	padding: 10px 10px 10px 10px;
+	padding: 0px;
+	width: 80%;
+	margin: auto;
 }
 
 
