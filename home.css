@@ -324,6 +324,10 @@ http://www.freeimagehosting.net/upload.php
     margin-top: 20px;
 }
 
+.horz {
+	display: flex;
+}
+
 .img-2 {
     height: 250px;
     background-size: cover;
@@ -333,6 +337,12 @@ http://www.freeimagehosting.net/upload.php
     margin: auto;
     margin-bottom: 3px;
 }
+.horz .img-2 {
+	height: 385px;
+	width: 50%;
+	border-radius: 6px;
+	margin: 0px;
+}
 
 .quote div:nth-child(2) {
     background-color: #27292D;
@@ -340,6 +350,13 @@ http://www.freeimagehosting.net/upload.php
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
 }
+.quote.horz div:nth-child(2) {
+	border-bottom-left-radius: 0px;
+	margin: auto;
+	margin-left: 0px;
+	background-color: #5C6266;
+}
+
 
 /* Animations */
 
