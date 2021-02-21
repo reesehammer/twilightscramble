@@ -344,6 +344,11 @@ http://www.freeimagehosting.net/upload.php
 	margin: 0px;
 	border-right: 2px solid #969E9F;
 	border-bottom: 2px solid #969E9F;
+	background-position: 50% 45%;
+}
+.full .img-2 {
+	height: 75vh;
+	border-radius: 6px;
 }
 
 .quote div:nth-child(2) {
@@ -357,6 +362,18 @@ http://www.freeimagehosting.net/upload.php
 	margin: auto;
 	margin-left: 0px;
 	background-color: #5C6266;
+}
+.quote.full {
+	width: calc(100% + 310px);
+	margin-left: -240px;
+}
+.quote.full div:nth-child(2) {
+	border-radius: 6px;
+  max-width: 250px;
+  margin: -80px 250px 0px auto;
+	padding: 20px 20px 10px 20px;
+	border-right: 2px solid #969E9F;
+	border-bottom: 2px solid #969E9F;
 }
 
 
@@ -547,7 +564,7 @@ looks like we might have to add to classes at the same time, but that's kind
 .quote {
 	padding: 0px;
 	width: 80%;
-	margin: 30px auto;
+	margin: 70px auto;
 }
 
 
