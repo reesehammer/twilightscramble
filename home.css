@@ -138,11 +138,7 @@ body > div {
 .d_content {
 	margin: auto auto auto 10px;
 }
-@media(max-width: 420px){
-	.desktop {
-		display: none;
-	}
-}
+
 /* Desktop Nav */
 @media (min-width: 1285px) {
 	.close_nav {
@@ -151,12 +147,19 @@ body > div {
 	}
 }
 
+
+@media(max-width: 726px){
+	.desktop {
+		display: none;
+	}
+}
+
+
 /* MOBILE */
-@media (min-width: 421px){
+@media (min-width: 727px) {
+
 
 	.mobile {
-		/* max-width: 420px; */
-		/* margin: 0px auto; */
 		width: 100%;
 		margin: 80px 80px 0px 250px;
 	}
@@ -174,7 +177,6 @@ body > div {
 
 	.close_nav button {
 		background-color: #18191a !important;
-
 	}
 }
 /*
@@ -234,7 +236,7 @@ http://www.freeimagehosting.net/upload.php
     display: inline-block;
 }
 .hide {
-	display:none;
+	display: none;
 }
 /* ^^^ NAV BTNS ^^^ */
 
@@ -660,7 +662,45 @@ looks like we might have to add to classes at the same time, but that's kind
 
 
 
+/* Homepage Mobile Overrides */
+@media (max-width: 727px) {
+	.intro {
+		border-right: 0px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+	}
+	.hero-fade {
+		margin: 30px 0px;
+		width: 100%;
+	}
+	.profile-img {
+		height: 15vh;
+		width: 13vh;
+	}
+	.quote {
+		width: calc(100% - 20px);
+		margin: 70px 10px;
+	}
+	.quote.full {
+		width: 100%;
+		margin-left: 0px;
+	}
+	.full .img-2 {
+		height: 50vh;
+		border-radius: 0px;
+	}
+	.quote.full div:nth-child(2) {
+		margin: -23px auto 0px auto;
+		padding: 10px 20px 0px 20px;
+		text-align: center;
+	}
+	.footer {
+		margin: 40px 5px 10px 5px;
+		width: calc(100% - 90px);
 
+	}
+
+}
 
 
 
