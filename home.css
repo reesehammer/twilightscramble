@@ -331,9 +331,9 @@ http://www.freeimagehosting.net/upload.php
 }
 
 .img-2 {
-    height: 250px;
+    height: 530px;
     background-size: cover;
-    background-position: 50% 48%;
+    background-position: 0% 0%;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     margin: auto;
