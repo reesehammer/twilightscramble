@@ -50,14 +50,14 @@ reesehammerstrom@gmail.com
 
   <body>
 
-    <div class="master_wrap">
+    <div class="master_wrap darkmode" id="toggleTheme">
 
       <div class="desktop">
     		<div class="d_cont">
     			<div class="d_content">
     				<h1>Hey, I'm Reese.</h1>
     				<p>Currently thinking about:</p><div class="cycle">
-                <section> <!-- move this div as a class of section?? -->
+                <section>
                 	<h3>
                 		<div>
                 			<span>Heather</span>
@@ -83,7 +83,7 @@ reesehammerstrom@gmail.com
   		<!-- Btn to close the nav when it's open -->
   		<div class="nav_hide_btn hide" id="close_nav">
   			<div class="close_nav">
-  				<button onclick="closeNav()">-</button>
+  				<button onclick="closeNav()"></button>
   			</div>
   		</div>
 
@@ -134,6 +134,15 @@ reesehammerstrom@gmail.com
             <h2>Ecommerce Director | Nomad</h2>
             <p>&#129304;</p>
 
+            <!-- theme changer -->
+            <div class="togglebtn">
+              <button onclick="toggleTheme()"></button>
+
+              <label class="switch">
+                <!-- <input type="checkbox"> -->
+                <span class="slider round"></span>
+              </label>
+            </div>
 
           </div>
   			</div>
@@ -206,6 +215,20 @@ reesehammerstrom@gmail.com
 
 
 </section></div>
+
+
+  <!-- Toggle Theme -->
+  <script>
+
+    function toggleTheme() {
+        var toggleThemeToDark = document.getElementById("toggleTheme");
+        toggleThemeToDark.classList.toggle("lightmode");
+
+        var toggleThemeToLight = document.getElementById("toggleTheme");
+        toggleThemeToLight.classList.toggle("darkmode");
+    }
+
+  </script>
 
 
  	<!-- Open Nav -->

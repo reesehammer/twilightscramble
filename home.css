@@ -2,10 +2,23 @@
 
 Colors:
 
-Light White: #e9eaead6;
-White: #e9eaea;
-Light: #27292d
-Dark: #18191a
+DarkMode:
+- White: #e9eaea
+- Borders: #969E9F
+- Link Underline: #e9eaea6e
+- DarkMode Background Light: #5C6266
+- DarkMode Background Dark: #27292d
+
+LightMode:
+- White: #27292d
+- Borders: #969E9F
+- DarkMode Background Light: #5C6266
+- DarkMode Background Dark: #e9eaea
+
+
+Other:
+- [old] Dark: #18191a
+- [old]: Light White: #e9eaead6
 
 */
 
@@ -18,6 +31,29 @@ Dark: #18191a
 @font-face {
 	font-family: Prime-Regular;
 	src: url(Prime/Prime-Regular.woff) format('woff');
+}
+
+.lightmode, .lightmode .main-content, .lightmode .quote div:nth-child(2), .lightmode .quote.horz div:nth-child(2), .lightmode .footer {
+	background-color: #e9eaea;
+}
+.lightmode h1, .lightmode h2, .lightmode h3, .lightmode h3 span, .lightmode h4, .lightmode p, .lightmode a {
+	color: #27292d;
+}
+.lightmode a {
+	border-bottom: 1px solid #27292d6e;
+}
+.lightmode .intro {
+	border-bottom: 2px solid #5C6266;
+}
+.lightmode .profile-img {
+	border-right:  2px solid #5C6266;
+	border-bottom: 2px solid #5C6266;
+}
+.lightmode .quote div:nth-child(2), .lightmode .quote.full div:nth-child(2), .lightmode .footer {
+	border: 2px solid #5C6266;
+}
+.lightmode .footer {
+	padding: 8px 40px 10px 38px;
 }
 
 body {
@@ -53,6 +89,7 @@ h3 {
 	font-weight: 700;
 	margin: 0px 0px 10px 0px ;
 	color: #e9eaea;
+	line-height: 1.4;
 }
 h3 span {
 	margin-left: 6px;
@@ -117,6 +154,13 @@ body > div {
 .master_wrap {
 	display: flex;
 }
+
+/* Theme Changer*/
+.togglebtn {
+	padding: 5px 0px;
+	display: flex;
+}
+
 /* DESKTOP */
 .desktop {
 }
@@ -183,6 +227,78 @@ body > div {
 Go here to upload images:
 http://www.freeimagehosting.net/upload.php
 */
+
+
+/* toggle button*/
+
+.togglebtn button {
+	width: 60px;
+	height: 34px;
+	z-index: 1;
+	opacity: 0;
+	padding: 0px;
+	border: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+	margin-left: -60px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #27292D;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 6px;
+  background-color: #e9eaea;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider, .darkmode .slider {
+  background-color: #e9eaea;
+}
+
+input:checked + .slider:before, .darkmode .slider:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+	background-color: #27292D;
+}
+
+.slider.round {
+  border-radius: 6px;
+}
+
+.slider.round:before {
+  border-radius: 6px;
+}
+
+/* end switch  */
+
 
 
 /* Dev 032820 */
@@ -333,7 +449,7 @@ http://www.freeimagehosting.net/upload.php
 .img-2 {
     height: 530px;
     background-size: cover;
-    background-position: 0% 0%;
+    background-position: 38% 0%;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     margin: auto;
@@ -358,12 +474,14 @@ http://www.freeimagehosting.net/upload.php
     padding: 20px 20px 50px 20px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
+		border: 2px solid #27292D;
 }
 .quote.horz div:nth-child(2) {
 	border-bottom-left-radius: 0px;
 	margin: auto;
 	margin-left: 0px;
 	background-color: #5C6266;
+	border: none;
 }
 .quote.full {
 	width: calc(100% + 310px);
@@ -373,9 +491,12 @@ http://www.freeimagehosting.net/upload.php
 	border-radius: 6px;
   max-width: 250px;
   margin: -80px 250px 0px auto;
-	padding: 20px 20px 10px 20px;
+	padding: 20px 20px 10px 15px;
 	border-right: 2px solid #969E9F;
 	border-bottom: 2px solid #969E9F;
+	border-left: none !important;
+	border-top: none !important;
+	text-align: center;
 }
 
 
