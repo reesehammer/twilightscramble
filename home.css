@@ -906,3 +906,16 @@ looks like we might have to add to classes at the same time, but that's kind
 .option-1 .hide {
 	display: none;
 }
+
+
+/* Bachelor Party Page */
+.bachelor .mobile {
+	margin: 80px 80px 0px 80px;
+}
+
+@media (max-width: 727px) {
+	.bachelor .mobile {
+	    width: 100%;
+	    margin: 0px 0px 0px 0px;
+	}
+}
