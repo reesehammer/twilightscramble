@@ -73,7 +73,7 @@ only aply these classes to desktop:
 .lightmode .footer {
 	padding: 8px 40px 10px 38px;
 }
-.lightmode .togglebtn {
+.lightmode .togglebtn, .stay.darkmode .togglebtn {
 		position: fixed;
     top: 10px;
     right: 10px;
@@ -82,12 +82,15 @@ only aply these classes to desktop:
 .StandardPageType .footer div .togglebtn {
 	margin: 0px 0px 0px 0px;
 }
-.StandardPageType.lightmode .togglebtn {
+.StandardPageType.lightmode .togglebtn, .StandardPageType.stay.darkmode .togglebtn  {
     position: fixed;
     bottom: 10px;
 		top: 91%;
     right: 10px;
     transition: 0.1s;
+}
+.StandardPageType .intro-cont {
+	height: 100%;
 }
 .StandardPageType .footer {
 	text-align: left;
@@ -980,6 +983,17 @@ StandardPageType
 }
 .StandardPageType .intro {
 	background-position: 50% 69%;
+}
+/* CTA to open/close form */
+#rsvp-row a::after {
+    display: none;
+}
+#rsvp-row button {
+    color: #27292d;
+    background: #e9eaea;
+    border-radius: 6px;
+    padding: 12px 15px;
+		font-family: Prime-Regular, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 }
 
 @media (max-width: 727px) {

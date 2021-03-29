@@ -2,10 +2,10 @@
 
 <html>
    <head>
-      <title>Bachelor Party 2021</title>
+      <title>Reese | Bachelor Party | 2021</title>
       <link rel="stylesheet" type="text/css" href="home.css">
       <meta name="viewport" content="width=device-width,initial-scale=1.0 ,user-scalable=no">
-      <link rel="shortcut icon" type="image/png" href="hero_1.jpg"/>
+      <link rel="shortcut icon" type="image/png" href="bachhouse.jpg"/>
       <!-- Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118230484-2"></script>
       <script>
@@ -23,8 +23,9 @@
             <div class="intro" style="background-image: url(bachhouse.jpg);">
             </div>
             <p class="caption">Paso Robles, California &#x1f4cd;</p>
-            <p class="caption">Friday, October 13th</p>
-            <p class="caption">Add to Calendar</p>
+            <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=35.605026,-120.590175">View Location</a>
+            <p class="caption">Friday, August 13th</p>
+            <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDVsazlvYms1amdzN2g1MXJ2OTQzdXE1ZWEgcmVlc2VoYW1tZXJzdHJvbUBt&amp;tmsrc=reesehammerstrom%40gmail.com">Add to Calendar</a>
             <div class="hero-fade">
                <!--<div class="profile-img" style="background-image: url(headshot2020.jpg)">
                </div>-->
@@ -36,7 +37,20 @@
                      <p>&#129304; Reese</p>
 
                      <p>Around?</p>
-                     <p>CTA, Let me know</p>
+                     <p>Even if you aren't sure 100% yet, would love to know where you're at.</p>
+
+
+                       <div id="rsvp-row">
+                         <div>
+                           <a href="#rsvp-row">
+                             <button onclick="openRSVP()">Let Me Know</button>
+                           </a>
+                         </div>
+                         <div id="rsvp" class="hide form">
+                           <iframe class="airtable-embed" src="https://airtable.com/embed/shr9f6dZFBjlWEfPG?backgroundColor=orange" frameborder="0" onmousewheel="" width="100%" height="533"></iframe>
+                         </div>
+                       </div>
+
 
                   </div>
                </div>
@@ -95,7 +109,7 @@
                      ">Get 1,000 Free Supercharging Miles</a></div>
                </div>
                <div>
-                  <p>written by @reesehammer</p>
+                  <p>&lt;/&gt; by @reesehammer</p>
                   <!-- theme changer -->
                   <div class="togglebtn">
                      <button onclick="toggleTheme()"></button>
@@ -115,9 +129,20 @@
 
                 var toggleThemeToLight = document.getElementById("toggleTheme");
                 toggleThemeToLight.classList.toggle("darkmode");
+
+                var addStickButtonOne = document.getElementById("toggleTheme");
+                toggleThemeToDark.classList.add("stay");
             }
 
          </script>
+
+         <script>
+         function openRSVP() {
+           var openTask = document.getElementById("rsvp");
+           openTask.classList.toggle("hide");
+         }
+         </script>
+
       </div>
    </body>
    <!--
