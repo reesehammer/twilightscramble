@@ -79,6 +79,17 @@ only aply these classes to desktop:
     right: 10px;
     transition: 0.3s;
 }
+
+@media (max-width: 726px) {
+	.lightmode .togglebtn {
+
+	}
+}
+
+/* Lightmode Off */
+
+
+/* StandardPageType */
 .StandardPageType .footer div .togglebtn {
 	margin: 0px 0px 0px 0px;
 }
@@ -106,14 +117,20 @@ only aply these classes to desktop:
 .StandardPageType .footer div {
 	margin: 0px;
 }
-
-@media (max-width: 726px) {
-	.lightmode .togglebtn {
-
-	}
+.StandardPageType .mobile {
+	margin: 80px 80px 0px 80px;
+}
+.StandardPageType .intro {
+	background-position: 50% 69%;
 }
 
-/* Lightmode Off */
+@media (max-width: 727px) {
+	.StandardPageType .mobile {
+	    width: 100%;
+	    margin: 0px 0px 0px 0px;
+	}
+}
+/* StandardPageType Off */
 
 
 
@@ -977,14 +994,7 @@ looks like we might have to add to classes at the same time, but that's kind
 /*
 StandardPageType
 - Bachelor Party Page
-*/
-.StandardPageType .mobile {
-	margin: 80px 80px 0px 80px;
-}
-.StandardPageType .intro {
-	background-position: 50% 69%;
-}
-/* CTA to open/close form */
+CTA to open/close form */
 #rsvp-row a::after {
     display: none;
 }
@@ -994,11 +1004,4 @@ StandardPageType
     border-radius: 6px;
     padding: 12px 15px;
 		font-family: Prime-Regular, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
-}
-
-@media (max-width: 727px) {
-	.StandardPageType .mobile {
-	    width: 100%;
-	    margin: 0px 0px 0px 0px;
-	}
 }
