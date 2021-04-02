@@ -156,14 +156,15 @@ h2 {
 }
 
 h3 {
-	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
-	serif; font-size: 14px;
+	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size: 22px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 700;
 	margin: 0px 0px 10px 0px ;
 	color: #e9eaea;
 	line-height: 1.4;
+	letter-spacing: 1.5px;
 }
 h3 span {
 	margin-left: 6px;
@@ -188,8 +189,8 @@ h4 {
 	    letter-spacing: 1.4px;
 }
 p {
-	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
-	serif; font-size: 12px;
+	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size: 12px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -198,8 +199,8 @@ p {
 	color: #e9eaea;
 }
 a {
-	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
-	serif; font-size: 10px;
+	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size: 10px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -218,6 +219,12 @@ a.anchor::after {
 	content: 'vv';
 	margin-left: 5px;
 	font-size: 10px;
+}
+li {
+	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	color: #e9eaea;
+	font-size: 12px;
+	margin: 0px 0px 10px 0px;
 }
 body, body > div {
     min-height: 100%;
@@ -1005,3 +1012,20 @@ CTA to open/close form */
     padding: 12px 15px;
 		font-family: Prime-Regular, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 }
+
+
+/* Start Resume */
+.resume .quote {
+	background-color: #27292d;
+	padding: 20px 0px;
+	margin: 0px auto 40px auto;
+	border-radius: 6px;
+}
+.resume .quote > div {
+	padding: 0px 40px;
+}
+.resume .title {
+	margin: 0px auto;
+	width: 80%;
+}
+/* End Resume */
