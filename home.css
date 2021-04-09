@@ -180,14 +180,14 @@ h3 span {
 }
 h4 {
 	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
-	    font-size: 14px;
-	    font-style: normal;
-	    font-variant: normal;
-	    font-weight: 100;
-	    padding: 50px 0px 5px 0px;
-			margin: 0;
-	    color: #e9eaea;
-	    letter-spacing: 1.4px;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	padding: 50px 0px 5px 0px;
+	margin: 0;
+	color: #e9eaea;
+	letter-spacing: 1.4px;
 }
 p {
 	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
@@ -221,12 +221,17 @@ a.anchor::after {
 	margin-left: 5px;
 	font-size: 10px;
 }
+ul {
+	margin: 0px 0px;
+	padding: 0px 0px 0px 17px;
+}
 li {
 	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 	color: #e9eaea;
 	font-size: 12px;
 	margin: 10px 0px 0px 0px;
 	line-height: 1.5;
+	list-style-type: circle;
 }
 body, body > div {
     min-height: 100%;
@@ -1016,7 +1021,21 @@ CTA to open/close form */
 }
 
 
-/* Start Resume */
+/* Start Shogun Resume */
+.resume h1, h2, h3, p {
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.resume h4 {
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+}
+.resume li {
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 12px 0px 0px 0px ;
+}
 
 .resume .intro {
 	height: 16vh;
@@ -1026,6 +1045,7 @@ CTA to open/close form */
 	padding: 0px 0px 50px 0px;
 	margin: 0px auto 70px auto;
 	border-radius: 6px;
+	max-width: 800px;
 }
 .resume .quote > div {
 	padding: 0px 40px;
@@ -1055,4 +1075,10 @@ CTA to open/close form */
 	margin: 0 auto;
 }
 
-/* End Resume */
+@media (max-width: 727px) {
+	.resume .title {
+		width: calc(100% - 20px);
+	}
+}
+
+/* End Shogun Resume */
