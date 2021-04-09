@@ -184,7 +184,8 @@ h4 {
 	    font-style: normal;
 	    font-variant: normal;
 	    font-weight: 100;
-	    margin: 20px 0px;
+	    padding: 50px 0px 5px 0px;
+			margin: 0;
 	    color: #e9eaea;
 	    letter-spacing: 1.4px;
 }
@@ -224,7 +225,8 @@ li {
 	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 	color: #e9eaea;
 	font-size: 12px;
-	margin: 0px 0px 10px 0px;
+	margin: 10px 0px 0px 0px;
+	line-height: 1.5;
 }
 body, body > div {
     min-height: 100%;
@@ -1015,17 +1017,41 @@ CTA to open/close form */
 
 
 /* Start Resume */
+.resume .intro {
+	height: 16vh;
+}
 .resume .quote {
 	background-color: #27292d;
-	padding: 20px 0px;
-	margin: 0px auto 40px auto;
+	padding: 0px 0px 50px 0px;
+	margin: 0px auto 70px auto;
 	border-radius: 6px;
 }
 .resume .quote > div {
 	padding: 0px 40px;
 }
+.main-content > div:last-child {
+	margin: 0px auto 40px auto;
+}
 .resume .title {
 	margin: 0px auto;
 	width: 80%;
 }
+.resume .footer {
+	background-color: #5C6266;
+	border: none;
+	min-height: 68px;
+	margin: 0px auto 40px auto;
+	padding: 0px;
+	text-align: center;
+}
+.resume.lightmode .footer {
+	background-color: #e9eaea;
+}
+.resume .footer p {
+	margin: 0px;
+}
+.resume.StandardPageType .footer div .togglebtn {
+	margin: 0 auto;
+}
+
 /* End Resume */
