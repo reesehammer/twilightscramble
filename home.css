@@ -49,6 +49,10 @@ only aply these classes to desktop:
 	font-family: Prime-Regular;
 	src: url(Prime/Prime-Regular.woff) format('woff');
 }
+@font-face {
+	font-family: VentiCF-Light;
+	scr: url(VentiCF-Light.woff) format('woff');
+}
 
 /* Lightmode On */
 .lightmode, .lightmode .main-content, .lightmode .quote div:nth-child(2), .lightmode .quote.horz div:nth-child(2), .lightmode .footer {
@@ -1017,6 +1021,7 @@ CTA to open/close form */
 
 
 /* Start Resume */
+
 .resume .intro {
 	height: 16vh;
 }
