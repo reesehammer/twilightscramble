@@ -1036,9 +1036,30 @@ CTA to open/close form */
 	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 12px 0px 0px 0px ;
 }
-
+.resume .hero-fade, .resume .profile-img {
+	display: block;
+	margin: 0px auto;
+	max-width: 275px;
+}
+.resume .profile-img {
+	width: 275px;
+}
+.resume .intro-cont {
+	margin: 12px 0px 0px 12px;
+}
 .resume .intro {
 	height: 16vh;
+}
+.resume .icon::after {
+	display: none;
+}
+.resume .icon {
+	border-bottom: none;
+}
+.resume .icon img {
+	margin: 10px 0px 0px 0px;
+	width: 20px;
+	height: 20px;
 }
 .resume .quote {
 	background-color: #27292d;
@@ -1056,6 +1077,7 @@ CTA to open/close form */
 .resume .title {
 	margin: 0px auto;
 	width: 80%;
+	max-width: 800px;
 }
 .resume .footer {
 	background-color: #5C6266;
