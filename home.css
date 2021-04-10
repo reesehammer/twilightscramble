@@ -1022,83 +1022,131 @@ CTA to open/close form */
 
 
 /* Start Shogun Resume */
-.resume h1, h2, h3, p {
-	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+body .resume-shg {
+	background-color: rgb(26, 33, 42);
 }
-.resume h4 {
+body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lightmode .footer {
+	background-color: rgb(50, 60, 74);
+}
+.resume-shg .main-content {
+	background-color: rgb(26, 33, 42);
+}
+.resume-shg h1, .resume-shg.lightmode h1 {
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+	color: #e9eaea;
+}
+.resume-shg h2, .resume-shg.lightmode h2 {
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #e9eaea;
+	text-transform: uppercase;
+	padding: 10px 0px 0px 0px;
+}
+.resume-shg h3, .resume-shg.lightmode h3 {
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	color: #e9eaea;
+}
+.resume-shg h4 {
 	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #fff;
   font-weight: 900;
   font-size: 16px;
 }
-.resume li {
+.resume-shg.lightmode h4, .resume-shg.lightmode li {
+	color: rgb(26, 33, 42);
+}
+.resume-shg h4 span {
+	text-transform: none;
+}
+.resume-shg p, a {
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.resume.lightmode p {
+	color: #e9eaea;
+}
+.resume-shg li {
 	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 12px 0px 0px 0px ;
 }
-.resume .hero-fade, .resume .profile-img {
+.resume-shg .hero-fade, .resume-shg .profile-img {
 	display: block;
 	margin: 0px auto;
 	max-width: 275px;
 }
-.resume .profile-img {
+.resume-shg .profile-img {
 	width: 275px;
 }
-.resume .intro-cont {
-	margin: 12px 0px 0px 12px;
+.resume-shg .intro-cont {
+	margin: 12px 0px 22px 12px;
 }
-.resume .intro {
+.resume-shg .hero-txt h4 {
+	padding: 5px 0px 0px 0px;
+	font-size: 14px;
+	text-transform: none;
+}
+.resume-shg .intro {
 	height: 16vh;
 }
-.resume .icon::after {
+.resume-shg .icon::after {
 	display: none;
 }
-.resume .icon {
+.resume-shg .icon {
 	border-bottom: none;
 }
-.resume .icon img {
+.resume-shg .icon img {
 	margin: 10px 0px 0px 0px;
 	width: 20px;
 	height: 20px;
 }
-.resume .quote {
-	background-color: #27292d;
+.resume-shg .quote {
+	background-color: rgb(50, 60, 74);
 	padding: 0px 0px 50px 0px;
 	margin: 0px auto 70px auto;
 	border-radius: 6px;
 	max-width: 800px;
 }
-.resume .quote > div {
+.resume-shg.lightmode .quote {
+	background-color: #e9eaea;
+}
+.resume-shg .quote > div {
 	padding: 0px 40px;
 }
-.main-content > div:last-child {
+.resume-shg .main-content > div:last-child {
 	margin: 0px auto 40px auto;
 }
-.resume .title {
+.resume-shg .title {
 	margin: 0px auto;
 	width: 80%;
 	max-width: 800px;
 }
-.resume .footer {
-	background-color: #5C6266;
+.resume-shg .footer {
+	background-color: rgb(26, 33, 42);
 	border: none;
-	min-height: 68px;
+	min-height: 136px;
 	margin: 0px auto 40px auto;
 	padding: 0px;
 	text-align: center;
 }
-.resume.lightmode .footer {
-	background-color: #e9eaea;
+.resume-shg .footer p {
+	margin: 10px 0px 0px 0px;
 }
-.resume .footer p {
-	margin: 0px;
+.resume-shg .footer a {
+	font-size: 12px;
 }
-.resume.StandardPageType .footer div .togglebtn {
+.resume-shg.lightmode .footer a {
+	color: #e9eaea;
+	border-bottom: 1px solid #e9eaea6e;
+}
+.resume-shg.StandardPageType .footer div .togglebtn {
 	margin: 0 auto;
 }
 
 @media (max-width: 727px) {
-	.resume .title {
+	.resume-shg .title {
 		width: calc(100% - 20px);
 	}
 }
