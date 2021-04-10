@@ -1161,8 +1161,21 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 }
 
 @media (max-width: 727px) {
+	.resume-shg .hero-fade {
+		margin: 50px auto 60px auto;
+	}
+	.resume-shg .profile-img {
+		margin: 0px 0px 0px 0px;
+		width: 150px;
+	}
+	.resume-shg .intro-cont {
+    margin: 16px 0px 22px 0px;
+	}
 	.resume-shg .title {
-		width: calc(100% - 20px);
+		width: calc(100% - 40px);
+	}
+	.resume-shg .quote > div {
+		padding: 0px 20px;
 	}
 }
 
