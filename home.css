@@ -1072,6 +1072,13 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 12px 0px 0px 0px ;
 }
+.resume-shg ul ul {
+	padding: 0px 0px;
+}
+.resume-shg ul ul li {
+	padding-bottom: 15px;
+	list-style-type: none;
+}
 .resume-shg .hero-fade, .resume-shg .profile-img {
 	display: block;
 	margin: 0px auto;
@@ -1113,6 +1120,9 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 	margin: 0px auto 70px auto;
 	border-radius: 6px;
 	max-width: 800px;
+}
+.resume-shg .quote.objective, .resume-shg .quote.references {
+	padding: 40px 0px 50px 0px;
 }
 .resume-shg.lightmode .quote {
 	background-color: #e9eaea;
@@ -1158,6 +1168,21 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 }
 .resume-shg.lightmode .slider {
 	background-color: rgb(26, 33, 42);
+}
+.resume-shg .switch {
+	height: 30px;
+}
+.resume-shg .slider.round:before {
+	border-radius: 50%;
+	bottom: 4px;
+	left: 4px;
+}
+.resume-shg.lightmode .slider.round:before {
+	left: 7px;
+}
+.resume-shg .slider.round {
+	border-radius: 30px;
+	transition: all 0.2s ease 0s;
 }
 
 @media (max-width: 727px) {
