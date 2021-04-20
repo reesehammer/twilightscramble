@@ -1072,6 +1072,14 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 12px 0px 0px 0px ;
 }
+.resume-shg li span {
+    margin-left: 5px;
+    color: rgb(79, 98, 123);
+}
+.lightmode.resume-shg li span {
+    margin-left: 2px;
+    color: rgb(26, 33, 42);
+}
 .resume-shg ul ul {
 	padding: 0px 0px;
 }
@@ -1123,6 +1131,9 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 }
 .resume-shg .quote.objective, .resume-shg .quote.references {
 	padding: 40px 0px 50px 0px;
+}
+.resume-shg .quote.references a {
+    font-size: 12px;
 }
 .resume-shg.lightmode .quote {
 	background-color: #e9eaea;
@@ -1201,6 +1212,12 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 	}
 	.resume-shg .quote > div {
 		padding: 0px 20px;
+	}
+	.resume-shg li span {
+	  display: none;
+	}
+	.resume-shg.StandardPageType .footer div .togglebtn {
+		right: 12px;
 	}
 }
 
