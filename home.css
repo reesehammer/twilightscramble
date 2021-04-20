@@ -1064,6 +1064,10 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 }
 .resume-shg p, a {
 	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 0.02em;
+}
+.resume-shg .cv p {
+    margin-bottom: 10px;
 }
 .resume.lightmode p {
 	color: #e9eaea;
@@ -1071,6 +1075,7 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 .resume-shg li {
 	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 12px 0px 0px 0px ;
+	letter-spacing: 0.02em;
 }
 .resume-shg li span {
     margin-left: 5px;
@@ -1107,6 +1112,27 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 	font-size: 14px;
 	text-transform: none;
 	color: #e9eaea;
+}
+.resume-shg .cta a {
+	background-color: rgb(231, 75, 144);
+	border: 1px solid rgb(231, 75, 144);
+	padding: 6px 14px;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	border-radius: 2px;
+	font-size: 11px;
+	letter-spacing: 1px;
+	line-height: 14px;
+	cursor: pointer;
+	word-spacing: -0.3px;
+	display: inline-flex;
+	margin: 0px 0px 15px 0px;
+}
+.resume-shg.lightmode .footer .cta a {
+	border: 1px solid rgb(231, 75, 144);
+}
+.resume-shg .cta a::after {
+	display: none;
 }
 .resume-shg .intro {
 	height: 16vh;
@@ -1152,7 +1178,7 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 .resume-shg .footer {
 	background-color: rgb(26, 33, 42);
 	border: none;
-	min-height: 136px;
+	min-height: 179px;
 	margin: 0px auto 40px auto;
 	padding: 0px;
 	text-align: center;
