@@ -564,6 +564,7 @@ input:checked + .slider:before, .darkmode .slider:before {
 .full .img-2 {
 	height: 75vh;
 	border-radius: 6px;
+	background-position: 50% 50%;
 }
 
 .quote div:nth-child(2) {
@@ -587,13 +588,16 @@ input:checked + .slider:before, .darkmode .slider:before {
 .quote.full div:nth-child(2) {
 	border-radius: 6px;
   max-width: 250px;
-  margin: -80px 250px 0px auto;
+  margin: -35px 250px 0px auto;
 	padding: 20px 20px 10px 15px;
 	border-right: 2px solid #969E9F;
 	border-bottom: 2px solid #969E9F;
 	border-left: none !important;
 	border-top: none !important;
 	text-align: center;
+}
+.quote.full div:nth-child(2) h3 {
+	font-size: 12px;
 }
 
 
