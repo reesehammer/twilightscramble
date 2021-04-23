@@ -168,6 +168,7 @@ h3 {
 }
 h3 span {
 	margin-left: 6px;
+	margin-top: 3px;
 	position: absolute;
 	overflow: hidden;
 	opacity: 0;
@@ -255,7 +256,6 @@ body, body > div {
 }
 
 .d_cont {
-	height: 24%;
 	width: 200px;
 	background-color: #27292D;
 	display: flex;
@@ -263,7 +263,7 @@ body, body > div {
 	border-radius: 6px;
 	border-bottom: 3px solid #969E9F;
 	position: fixed;
-	padding: 60px 20px;
+	padding: 30px 20px 10px 20px;
 	/* margin: auto; */
 	top: 20%;
 	left: 40px;
@@ -521,6 +521,7 @@ input:checked + .slider:before, .darkmode .slider:before {
 
 .footer a {
     margin: 0px 10px;
+		font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 }
 
 .footer div:first-child {
@@ -546,20 +547,21 @@ input:checked + .slider:before, .darkmode .slider:before {
 .img-2 {
     height: 530px;
     background-size: cover;
-    background-position: 38% 0%;
+    background-position: 50% 50%;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     margin: auto;
     margin-bottom: 3px;
 }
+
 .horz .img-2 {
-	height: 385px;
+	min-height: 530px;
 	width: 50%;
 	border-radius: 6px;
 	margin: 0px;
 	border-right: 2px solid #969E9F;
 	border-bottom: 2px solid #969E9F;
-	background-position: 50% 45%;
+	background-position: 100% 50%;
 }
 .full .img-2 {
 	height: 75vh;
@@ -718,7 +720,7 @@ looks like we might have to add to classes at the same time, but that's kind
 
 .cycle section {
 	margin: 0px auto 0px 0px;
-	padding: 50px 0px 10px 0px;
+	padding: 20px 0px 0px 0px;
 	max-width: 300px;
 }
 .cycle h3 > div {
@@ -906,6 +908,13 @@ looks like we might have to add to classes at the same time, but that's kind
 	.quote.full {
 		width: 100%;
 		margin-left: 0px;
+	}
+	.img-2 {
+		height: 330px;
+	}
+	.horz .img-2 {
+		width: 100%;
+		min-height: 330px;
 	}
 	.full .img-2 {
 		height: 50vh;
