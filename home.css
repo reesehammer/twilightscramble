@@ -1190,6 +1190,14 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 .resume-shg .main-content > div:last-child {
 	margin: 0px auto 40px auto;
 }
+.resume-shg .page-title {
+	display: flex;
+}
+.resume-shg .page-title h3 {
+	font-size: 20px;
+  border-bottom: 1px solid rgb(79, 98, 123);
+  margin: 0px 0px 40px 0px;
+}
 .resume-shg .title {
 	margin: 0px auto;
 	width: 80%;
