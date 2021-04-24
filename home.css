@@ -1136,7 +1136,7 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 .resume-shg .cta a {
 	background-color: rgb(231, 75, 144);
 	border: 1px solid rgb(231, 75, 144);
-	padding: 6px 14px;
+	padding: 8px 14px 6px 14px;
 	text-transform: uppercase;
 	color: rgb(255, 255, 255);
 	border-radius: 2px;
