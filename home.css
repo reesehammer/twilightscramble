@@ -51,7 +51,7 @@ only aply these classes to desktop:
 }
 
 /* Lightmode On */
-.lightmode, .lightmode .main-content, .lightmode .quote div:nth-child(2), .lightmode .quote.horz div:nth-child(2), .lightmode .footer {
+.lightmode, .lightmode .d_cont, .lightmode .main-content, .lightmode .quote div:nth-child(2), .lightmode .quote.horz div:nth-child(2), .lightmode .footer {
 	background-color: #e9eaea;
 }
 .lightmode h1, .lightmode h2, .lightmode h3, .lightmode h3 span, .lightmode h4, .lightmode p, .lightmode a {
@@ -59,6 +59,13 @@ only aply these classes to desktop:
 }
 .lightmode a {
 	border-bottom: 1px solid #27292d6e;
+}
+.lightmode .d_cont {
+	border-right:  3px solid #5C6266;
+	border-bottom: 3px solid #5C6266;
+	border-top: 1px solid #5C6266;
+	border-left: 1px solid #5C6266;
+	padding: 29px 20px 10px 19px;
 }
 .lightmode .intro {
 	border-bottom: 2px solid #5C6266;
