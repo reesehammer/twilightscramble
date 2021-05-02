@@ -1029,16 +1029,65 @@ looks like we might have to add to classes at the same time, but that's kind
 StandardPageType
 - Bachelor Party Page
 CTA to open/close form */
-#rsvp-row a::after {
+.BachParty h1 {
+	font-size: 28px;
+	margin: 40px 15px;
+}
+.BachParty h3 {
+	margin: 0px 15px 0px 15px;
+}
+.BachParty .details a {
+    font-size: 12px;
+		margin-left: 20px;
+}
+.BachParty .intro-cont {
+    margin: 15px 15px 70px 15px;
+    background-color: #27292d;
+    padding: 15px;
+    border-radius: 6px;
+		letter-spacing: 0.5px;
+		border-right: 2px solid #969E9F;
+		border-bottom: 2px solid #969E9F;
+}
+.BachParty .hero-fade {
+    display: block;
+		margin: 0px;
+    width: 100%;
+}
+.BachParty .details {
+    background-color: #27292d;
+    margin: 15px;
+    border-radius: 6px;
+    padding: 10px 15px 30px 15px;
+		letter-spacing: 0.5px;
+		border-right: 2px solid #969E9F;
+		border-bottom: 2px solid #969E9F;
+}
+.BachParty .details p {
+    margin-top: 15px;
+}
+.BachParty #rsvp-row a::after {
     display: none;
 }
-#rsvp-row button {
+.BachParty #rsvp-row button {
     color: #27292d;
     background: #e9eaea;
     border-radius: 6px;
     padding: 12px 15px;
 		font-family: Prime-Regular, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 }
+.BachParty .footer {
+    margin: 65px 15px 30px 15px;
+    padding: 15px;
+    width: calc(100% - 60px);
+    min-height: 68px;
+    text-align: center;
+}
+.BachParty.StandardPageType .footer div .togglebtn {
+    margin: 0px auto;
+}
+
+/* End Bach Party */
 
 
 /* Start Shogun Resume */
@@ -1082,7 +1131,7 @@ body .resume-shg.lightmode, .resume-shg.lightmode .main-content, .resume-shg.lig
 .resume-shg h4 span {
 	text-transform: none;
 }
-.resume-shg p, a {
+.resume-shg p, .resume-shg a {
 	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	letter-spacing: 0.02em;
 }
