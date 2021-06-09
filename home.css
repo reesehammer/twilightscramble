@@ -1102,7 +1102,7 @@ CTA to open/close form */
 }
 @media (max-width: 726px) {
 	.BachParty .details {
-		padding: 30px 15px;
+		padding: 30px 15px 10px 15px;
 	}
 }
 .BachParty .details p {
@@ -1117,6 +1117,7 @@ CTA to open/close form */
     border-radius: 6px;
     padding: 12px 15px;
 		font-family: Prime-Regular, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+		margin: 0px 0px 25px 0px;
 }
 .BachParty .footer {
     margin: 65px 15px 30px 15px;
