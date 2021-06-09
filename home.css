@@ -946,62 +946,68 @@ looks like we might have to add to classes at the same time, but that's kind
 
 
 /* Noter */
-.banner {
+.Noter .banner {
 	width: 100%;
-	height: 20vh;
+	height: 30vh;
 	background-color: #27292d;
 	display: flex;
+	background-image: url(hero_1.jpg);
+  background-size: cover;
+  background-position: 50% 27%;
 }
-.banner h1 {
+.Noter .banner h1 {
 	line-height: 1;
 	margin: 0px;
 }
-.banner div {
-	border-top: 50px solid #e9eaead6;
+.Noter .banner div {
+	border-top: 5px solid #e9eaead6;
 	margin: 20px auto auto 20px;
-	padding: 15px 60px 60px 15px;
-	border-left: 20px solid #e9eaead6;
+	padding: 15px 60px 12px 15px;
+	border-left: 5px solid #e9eaead6;
 }
-
-.option-1 {
+.Noter .option-1 {
 	display:flex;
 	width: 100%;
 	height: 100%;
-	background-color: #27292d;
+	background-color: #5C6266;
 }
-
-.option-1 ul {
-	margin: 50px 0px;
+.Noter .option-1 ul {
+	margin: 0px 0px;
   width: 100%;
   list-style-type: none;
   padding: 0px;
 }
-
-.option-1 li {
+.Noter .option-1 li {
 	display: flex;
-	background-color: #393937;
+	background-color: #27292d;
 	padding: 30px 5px;
-	width: calc(100% - 60px);
-	margin: 40px auto;
+	width: 50%;
+	margin: 0px auto 20px auto;
 	border: 2px solid #e9eaead6;
-	border-radius: 20px;
+	border-radius: 6px;
 	border-top: 1px solid #e9eaead6;
 	border-left: 1px solid #e9eaead6;
 }
-
-.option-1 a {
+.Noter .option-1 li:first-child {
+	margin-top: -55px;
+}
+@media (max-width: 726px) {
+	.Noter .option-1 li {
+		width: calc(100% - 40px);
+		padding: 10px 0px;
+	}
+}
+.Noter .option-1 a {
 	display: flex;
 }
-
-.option-1 li > div {
+.Noter .option-1 li > div {
 	display: flex;
 }
-
-.option-1 .content {
+.Noter .option-1 .content {
 	display: block;
 }
 .option-1 button {
-	background-color: #393937;
+	background-color: #27292d;
 	color: #e9eaead6;
 	border: 0px;
 	font-family: Prime-Light, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
@@ -1011,19 +1017,16 @@ looks like we might have to add to classes at the same time, but that's kind
 	cursor: pointer;
 	min-width: 150px;
 }
-
-.form {
-	padding: 40px 0px;
+.Noter .form {
+	padding: 20px 0px;
 }
-
-.option-1 div {
+.Noter .option-1 div {
 	margin: auto;
 }
-
-.option-1 .hide {
+.Noter .option-1 .hide {
 	display: none;
 }
-
+/* End Noter */
 
 /*
 StandardPageType
