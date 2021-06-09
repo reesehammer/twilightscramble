@@ -1030,7 +1030,7 @@ StandardPageType
 - Bachelor Party Page
 CTA to open/close form */
 .BachParty h1 {
-	font-size: 28px;
+	font-size: 26px;
 	margin: 40px 15px;
 }
 .BachParty h3 {
@@ -1050,7 +1050,6 @@ CTA to open/close form */
 }
 .BachParty .details a {
     font-size: 12px;
-		margin-left: 20px;
 }
 .BachParty .hero-txt h5:last-child {
 	margin-bottom: 10px;
@@ -1093,7 +1092,7 @@ CTA to open/close form */
     background-color: #27292d;
     margin: 15px;
     border-radius: 6px;
-    padding: 50px 15px 50px 15px;
+    padding: 50px 50px 50px 50px;
 		letter-spacing: 0.5px;
 		border-right: 2px solid #969E9F;
 		border-bottom: 2px solid #969E9F;
