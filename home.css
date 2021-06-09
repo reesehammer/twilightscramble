@@ -1097,6 +1097,11 @@ CTA to open/close form */
 		border-right: 2px solid #969E9F;
 		border-bottom: 2px solid #969E9F;
 }
+@media (max-width: 726px) {
+	.BachParty .details {
+		padding: 30px 15px;
+	}
+}
 .BachParty .details p {
     margin-top: 15px;
 }
