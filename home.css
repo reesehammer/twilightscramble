@@ -1036,18 +1036,53 @@ CTA to open/close form */
 .BachParty h3 {
 	margin: 0px 15px 0px 15px;
 }
+.BachParty h5 {
+	padding: 0px 0px 10px 0px;
+	color: #e9eaea;
+	font-weight: 100;
+	font-size: 18px;
+	margin: 10px 0px 0px 0px;
+	font-family: Prime-Regular, "Courier Bold", Courier, Georgia, Times, "Times New Roman",
+	serif;
+}
+.BachParty.lightmode h5 {
+	color: #27292d;
+}
 .BachParty .details a {
     font-size: 12px;
 		margin-left: 20px;
 }
+.BachParty .hero-txt h5:last-child {
+	margin-bottom: 10px;
+}
+.BachParty .intro.light {
+    display: none;
+}
+.BachParty.lightmode .intro.light {
+    display: block;
+}
+.BachParty.lightmode .intro.dark {
+    display: none;
+}
+.BachParty .main-content > h5 {
+	margin-left: 15px;
+}
+.BachParty .hero-txt p {
+	padding: 0px 0px 10px 0px;
+}
 .BachParty .intro-cont {
     margin: 15px 15px 70px 15px;
     background-color: #27292d;
-    padding: 15px;
+    padding: 25px 30px 30px 30px;
     border-radius: 6px;
 		letter-spacing: 0.5px;
 		border-right: 2px solid #969E9F;
 		border-bottom: 2px solid #969E9F;
+}
+.BachParty.lightmode .intro-cont {
+	background-color: #e9eaea;
+  border: 2px solid #969E9F;
+  padding: 23px 30px 30px 28px;
 }
 .BachParty .hero-fade {
     display: block;
@@ -1058,7 +1093,7 @@ CTA to open/close form */
     background-color: #27292d;
     margin: 15px;
     border-radius: 6px;
-    padding: 10px 15px 30px 15px;
+    padding: 50px 15px 50px 15px;
 		letter-spacing: 0.5px;
 		border-right: 2px solid #969E9F;
 		border-bottom: 2px solid #969E9F;
@@ -1086,6 +1121,10 @@ CTA to open/close form */
 .BachParty.StandardPageType .footer div .togglebtn {
     margin: 0px auto;
 }
+/* bach party update 060821 */
+
+
+
 
 /* End Bach Party */
 
