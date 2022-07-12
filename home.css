@@ -570,6 +570,9 @@ input:checked + .slider:before, .darkmode .slider:before {
 	border-bottom: 2px solid #969E9F;
 	background-position: 100% 50%;
 }
+.horz .img-2:first-child {
+    background-position: 100% 100%;
+}
 .full .img-2 {
 	height: 75vh;
 	border-radius: 6px;
